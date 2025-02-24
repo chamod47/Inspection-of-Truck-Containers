@@ -26,5 +26,10 @@ namespace Customs_Department_interface
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
