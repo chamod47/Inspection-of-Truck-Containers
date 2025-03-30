@@ -1,0 +1,43 @@
+﻿<Window x:Class="Custome_Department_Truck_Inspection_System.InspectionDetailWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Custome_Department_Truck_Inspection_System"
+        mc:Ignorable="d"
+        Title="InspectionDetailWindow" Height="350" Width="525">
+    <Grid>
+        <TextBlock Text="Inspection Details" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10" FontSize="16"/>
+
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="300">
+
+            <DatePicker Name="InspectionDatePicker" Width="200" Margin="5"/>
+            
+            <TextBlock Text="Inspector Name:"/>
+            <TextBox Name="InspectorNameTextBox" Width="200" Margin="5"/>
+
+            <TextBlock Text="Inspector ID:"/>
+            <TextBox Name="InspectorIdTextBox" Width="200" Margin="5"/>
+
+            <TextBlock Text="Inspection Location:"/>
+            <TextBox Name="LocationTextBox" Width="200" Margin="5"/>
+
+            <TextBlock Text="InspectionType:"/>
+            <ComboBox Name="InspectionTypeTextBox" Width="200" Margin="5">
+                <ComboBoxItem>Routine</ComboBoxItem>
+                <ComboBoxItem>Random</ComboBoxItem>
+                <ComboBoxItem>Post-Accident</ComboBoxItem>
+                <ComboBoxItem> </ComboBoxItem>
+                
+            </ComboBox>
+
+
+
+
+
+            <Button Content="Save Details" Width="100" Margin="10" Click="SaveDetailsButton_Click"/>
+            
+        </StackPanel>
+
+    </Grid>
+</Window>

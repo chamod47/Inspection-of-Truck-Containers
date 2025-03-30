@@ -1,0 +1,57 @@
+﻿<Window x:Class="Custome_Department_Truck_Inspection_System.TruckInformtionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Custome_Department_Truck_Inspection_System"
+        mc:Ignorable="d"
+        Title="TruckInformtionWindow" Height="550" Width="600">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="38*"/>
+            <ColumnDefinition Width="37*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Truck Information" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200,10,0,0" FontSize="16" Grid.ColumnSpan="2"/>
+        <StackPanel Margin="112,36,113,11" Grid.ColumnSpan="2">
+            <TextBlock Text="Truck Registration Number:"/>
+            <TextBox Name="TruckRegTextBox" Width="200" Margin="5"/>
+
+            <TextBlock Text="Truck Type:"/>
+            <ComboBox Name="TruckTypeTextBox" Width="200" Margin="5">
+                <ComboBoxItem>Heavy</ComboBoxItem>
+                <ComboBoxItem>Medium</ComboBoxItem>
+                <ComboBoxItem>Light</ComboBoxItem>
+            </ComboBox>
+
+            <TextBlock Text="Make/Model:"/>
+            <TextBox Name="MakeTextBox" Width="200" Margin="5"/>
+
+            <TextBlock Text="Chassis Number:"/>
+            <TextBox Name="ChassNumberTextBox" Width="200" Margin="5"/>
+
+            <TextBlock Text="Year of Manufacture:"/>
+            <TextBox Name="YearTextBox" Width="200" Margin="5"/>
+
+            <TextBlock Text="Fuel Type:"/>
+            <ComboBox Name="FuelTypeTextBox" Width="200" Margin="5">
+                <ComboBoxItem>Diesel</ComboBoxItem>
+                <ComboBoxItem>Petrol</ComboBoxItem>
+            </ComboBox>
+
+            <TextBlock Text="Truck Owner Name"/>
+            <TextBox Name="OwnerText" Width="200" Margin="5"/>
+
+            <TextBlock Text="Address"/>
+            <TextBox Name="AddressText" Width="200" Margin="5"/>
+
+            <TextBlock Text="Contact Number"/>
+            <TextBox Name="ContactText" Width="200" Margin="5"/>
+
+
+
+            <Button Content="Save" Width="100" Margin="10" Click="SaveButton_Click"/>
+
+        </StackPanel>
+
+    </Grid>
+</Window>

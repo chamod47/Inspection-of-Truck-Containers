@@ -1,0 +1,35 @@
+﻿<Window x:Class="Custome_Department_Truck_Inspection_System.SafetyMecanicalInspectionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Custome_Department_Truck_Inspection_System"
+        mc:Ignorable="d"
+        Title="SafetyMecanicalInspectionWindow" Height="350" Width="525">
+    <Grid>
+        <TextBlock Text="Safety and Mechanical Inspection" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10" FontSize="16"/>
+
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="300">
+
+            <TextBlock Text="Brakes Condition:"/>
+            
+            <ComboBox Name="BrakesConditionComboBox" Width="200" Margin="5">
+                <ComboBoxItem>Good</ComboBoxItem>
+                <ComboBoxItem>Needs Repair</ComboBoxItem>
+                <ComboBoxItem>Critical</ComboBoxItem>
+            </ComboBox>
+
+            <TextBlock Text="Engine Condition:"/>
+
+            <ComboBox Name="EngineConditionComboBox" Width="200" Margin="5">
+                <ComboBoxItem>Good</ComboBoxItem>
+                <ComboBoxItem>Needs Repair</ComboBoxItem>
+                <ComboBoxItem>Critical</ComboBoxItem>
+            </ComboBox>
+
+            <Button Content="Save Inspection" Width="100" Margin="10" Click="SaveInspectionButton_Click"/>
+            
+        </StackPanel>
+
+    </Grid>
+</Window>

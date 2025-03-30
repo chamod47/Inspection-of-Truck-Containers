@@ -1,0 +1,31 @@
+C:\Users\Jagath\source\repos\GUI Cw\Custome Department Truck Inspection System\bin\Debug\Custome Department Truck Inspection System.exe.config
+C:\Users\Jagath\source\repos\GUI Cw\Custome Department Truck Inspection System\bin\Debug\Custome Department Truck Inspection System.exe
+C:\Users\Jagath\source\repos\GUI Cw\Custome Department Truck Inspection System\bin\Debug\Custome Department Truck Inspection System.pdb
+C:\Users\Jagath\source\repos\GUI Cw\Custome Department Truck Inspection System\obj\Debug\Custome Department Truck Inspection System.csproj.AssemblyReference.cache
+C:\Users\Jagath\source\repos\GUI Cw\Custome Department Truck Inspection System\obj\Debug\DashboardWindow.g.cs
+C:\Users\Jagath\source\repos\GUI Cw\Custome Department Truck Inspection System\obj\Debug\MainWindow.g.cs
+C:\Users\Jagath\source\repos\GUI Cw\Custome Department Truck Inspection System\obj\Debug\App.g.cs
+C:\Users\Jagath\source\repos\GUI Cw\Custome Department Truck Inspection System\obj\Debug\Custome Department Truck Inspection System_MarkupCompile.cache
+C:\Users\Jagath\source\repos\GUI Cw\Custome Department Truck Inspection System\obj\Debug\Custome Department Truck Inspection System_MarkupCompile.lref
+C:\Users\Jagath\source\repos\GUI Cw\Custome Department Truck Inspection System\obj\Debug\DashboardWindow.baml
+C:\Users\Jagath\source\repos\GUI Cw\Custome Department Truck Inspection System\obj\Debug\MainWindow.baml
+C:\Users\Jagath\source\repos\GUI Cw\Custome Department Truck Inspection System\obj\Debug\Custome Department Truck Inspection System.g.resources
+C:\Users\Jagath\source\repos\GUI Cw\Custome Department Truck Inspection System\obj\Debug\Custome_Department_Truck_Inspection_System.Properties.Resources.resources
+C:\Users\Jagath\source\repos\GUI Cw\Custome Department Truck Inspection System\obj\Debug\Custome Department Truck Inspection System.csproj.GenerateResource.cache
+C:\Users\Jagath\source\repos\GUI Cw\Custome Department Truck Inspection System\obj\Debug\Custome Department Truck Inspection System.csproj.CoreCompileInputs.cache
+C:\Users\Jagath\source\repos\GUI Cw\Custome Department Truck Inspection System\obj\Debug\Custome Department Truck Inspection System.exe
+C:\Users\Jagath\source\repos\GUI Cw\Custome Department Truck Inspection System\obj\Debug\Custome Department Truck Inspection System.pdb
+C:\Users\Jagath\source\repos\GUI Cw\Custome Department Truck Inspection System\obj\Debug\CargoLoadInspectionWindow.g.cs
+C:\Users\Jagath\source\repos\GUI Cw\Custome Department Truck Inspection System\obj\Debug\InspectionDetailWindow.g.cs
+C:\Users\Jagath\source\repos\GUI Cw\Custome Department Truck Inspection System\obj\Debug\InspectionOutcomesWindow.g.cs
+C:\Users\Jagath\source\repos\GUI Cw\Custome Department Truck Inspection System\obj\Debug\LegalComplianceCheckWindow.g.cs
+C:\Users\Jagath\source\repos\GUI Cw\Custome Department Truck Inspection System\obj\Debug\ReportsDataManagementWindow.g.cs
+C:\Users\Jagath\source\repos\GUI Cw\Custome Department Truck Inspection System\obj\Debug\SafetyMecanicalInspectionWindow.g.cs
+C:\Users\Jagath\source\repos\GUI Cw\Custome Department Truck Inspection System\obj\Debug\TruckInformtionWindow.g.cs
+C:\Users\Jagath\source\repos\GUI Cw\Custome Department Truck Inspection System\obj\Debug\CargoLoadInspectionWindow.baml
+C:\Users\Jagath\source\repos\GUI Cw\Custome Department Truck Inspection System\obj\Debug\InspectionDetailWindow.baml
+C:\Users\Jagath\source\repos\GUI Cw\Custome Department Truck Inspection System\obj\Debug\InspectionOutcomesWindow.baml
+C:\Users\Jagath\source\repos\GUI Cw\Custome Department Truck Inspection System\obj\Debug\LegalComplianceCheckWindow.baml
+C:\Users\Jagath\source\repos\GUI Cw\Custome Department Truck Inspection System\obj\Debug\ReportsDataManagementWindow.baml
+C:\Users\Jagath\source\repos\GUI Cw\Custome Department Truck Inspection System\obj\Debug\SafetyMecanicalInspectionWindow.baml
+C:\Users\Jagath\source\repos\GUI Cw\Custome Department Truck Inspection System\obj\Debug\TruckInformtionWindow.baml

@@ -1,0 +1,22 @@
+﻿<Window x:Class="Custome_Department_Truck_Inspection_System.LegalComplianceCheckWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Custome_Department_Truck_Inspection_System"
+        mc:Ignorable="d"
+        Title="LegalComplianceCheckWindow" Height="350" Width="525">
+    <Grid>
+        <TextBlock Text="Legal and Compliance Check" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10" FontSize="16"/>
+
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="300">
+            <TextBlock Text="Compliance Status:"/>
+            <ComboBox Name="ComplianceStatusComboBox" Width="200" Margin="5">
+                <ComboBoxItem>Compliant</ComboBoxItem>
+                <ComboBoxItem>Non-Compliant</ComboBoxItem>
+                
+            </ComboBox>
+            <Button Content="Save Compliance Check" Width="100" Margin="10" Click="SaveComplianceCheckButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

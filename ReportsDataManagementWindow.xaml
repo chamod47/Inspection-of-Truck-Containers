@@ -1,0 +1,24 @@
+﻿<Window x:Class="Custome_Department_Truck_Inspection_System.ReportsDataManagementWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Custome_Department_Truck_Inspection_System"
+        mc:Ignorable="d"
+        Title="ReportsDataManagementWindow" Height="350" Width="525">
+    <Grid>
+        <TextBlock Text="Reports and Data Management" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10" FontSize="16"/>
+
+        <StackPanel VerticalAlignment="Center" Width="300">
+            <TextBlock Text="Select Report Type:"/>
+            <ComboBox Name="ReportTypeComboBox" Width="200" Margin="5">
+                <ComboBoxItem>Inspection Report</ComboBoxItem>
+                <ComboBoxItem>Compliance Report</ComboBoxItem>
+                <ComboBoxItem>Cargo Report</ComboBoxItem>
+                
+            </ComboBox>
+            <Button Content="Generate Report" Width="100" Margin="10" Click="GenerateReportButton_click"/>
+        </StackPanel>
+
+    </Grid>
+</Window>

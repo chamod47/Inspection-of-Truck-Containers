@@ -1,0 +1,25 @@
+﻿<Window x:Class="Custome_Department_Truck_Inspection_System.CargoLoadInspectionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Custome_Department_Truck_Inspection_System"
+        mc:Ignorable="d"
+        Title="CargoLoadInspectionWindow" Height="525" Width="350">
+    <Grid>
+        <TextBlock Text="Cargo and Load Inspection" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10" FontSize="16"/>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="300">
+            <TextBlock Text="Load Weight(kg):"/>
+            <TextBox Name="LoadWeigtTextbox" Width="200" Margin="5"/>
+            <TextBlock Text="Cargo Type:"/>
+            <ComboBox Name="CargoTypeComboBox" Width="200" Margin="5">
+                <ComboBoxItem>Perishable</ComboBoxItem>
+                <ComboBoxItem>Non-Perishable</ComboBoxItem>
+                <ComboBoxItem>Fragile</ComboBoxItem>
+            </ComboBox>
+
+        </StackPanel>
+
+        <Button Content="Save Cargo Inspection" Margin="103,381,102,37" Click="SaveCargoInspectionButton_Click"/>
+    </Grid>
+</Window>
