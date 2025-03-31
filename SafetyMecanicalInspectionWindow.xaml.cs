@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using MySql.Data.MySqlClient;
 
 namespace Custome_Department_Truck_Inspection_System
 {
@@ -26,12 +27,38 @@ namespace Custome_Department_Truck_Inspection_System
 
         private void SaveInspectionButton_Click(object sender, RoutedEventArgs e)
         {
-            String brakesCondition=BrakesConditionComboBox.SelectedItem?.ToString();
+            string brakesCondition = (BrakesConditionComboBox.SelectedItem as ComboBoxItem)?.Content.ToString();
+            string engineCondition = (EngineConditionComboBox.SelectedItem as ComboBoxItem)?.Content.ToString();
 
-            String engineCondition=EngineConditionComboBox.SelectedItem?.ToString();
+            if (string.IsNullOrEmpty(brakesCondition) || string.IsNullOrEmpty(engineCondition))
+            {
+                MessageBox.Show("Please select conditions for both brakes and engine.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
 
+            try
+            {
+                string connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["TruckInspectionDB"].ConnectionString;
 
-            MessageBox.Show($"Safety Inspection Saved: Breakes-{brakesCondition}, Engine-{engineCondition}");        
+                using (MySqlConnection connection = new MySqlConnection(connectionString))
+                {
+                    connection.Open();
+                    string query = "INSERT INTO SafetyMechanicalInspection (brakes_condition, engine_condition) VALUES (@brakesCondition, @engineCondition)";
+
+                    using (MySqlCommand command = new MySqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@brakesCondition", brakesCondition);
+                        command.Parameters.AddWithValue("@engineCondition", engineCondition);
+
+                        command.ExecuteNonQuery();
+                        MessageBox.Show("Inspection data saved successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Database Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
     }
 }

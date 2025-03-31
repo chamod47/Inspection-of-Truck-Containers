@@ -10,14 +10,23 @@
         <TextBlock Text="Inspection Outcomes and Recommendations" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10" FontSize="16"/>
 
         <StackPanel VerticalAlignment="Center" Width="300">
-            <TextBlock Text="Inspection Outcome:"/>
-            <ComboBox Name="InspectionOutcomeComboBox" Width="200" Margin="5">
+            <TextBlock Text="Inspection Status:"/>
+            <ComboBox Name="InspectionStatusComboBox" Width="200" Margin="5" SelectionChanged="InspectionOutcomeComboBox_SelectionChanged">
                 <ComboBoxItem>Pass</ComboBoxItem>
                 <ComboBoxItem>Fail</ComboBoxItem>
                 <ComboBoxItem>Need Improvement</ComboBoxItem>
             </ComboBox>
-            <TextBlock Text="Recommendations:"/>
+            
+            <TextBlock Text="Isuues Identified:"/>
             <TextBox Name="RecommendationTextBox" Width="200" Height="80" Margin="5" VerticalScrollBarVisibility="Auto" AcceptsReturn="True"/>
+
+            <TextBlock Text="Recommended Repairs and Actions:"/>
+            <TextBox Name="RecommendTextBox" Width="200" Height="80" Margin="5" VerticalScrollBarVisibility="Auto" AcceptsReturn="True"/>
+
+            <TextBlock Text="Next Inspection Due Date:"/>
+            <TextBox Name="DueDateTextBox" Width="200" Margin="5"/>
+            
+            
             <Button Content="Save Outcomes" Width="100" Margin="10" Click="SaveOutcomeButton_Click"/>
         </StackPanel>
     </Grid>
