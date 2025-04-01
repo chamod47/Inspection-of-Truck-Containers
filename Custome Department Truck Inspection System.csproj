@@ -107,6 +107,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AddUserWindow.xaml.cs">
+      <DependentUpon>AddUserWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CargoLoadInspectionWindow.xaml.cs">
       <DependentUpon>CargoLoadInspectionWindow.xaml</DependentUpon>
     </Compile>
@@ -128,6 +131,10 @@
     <Compile Include="TruckInformtionWindow.xaml.cs">
       <DependentUpon>TruckInformtionWindow.xaml</DependentUpon>
     </Compile>
+    <Page Include="AddUserWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CargoLoadInspectionWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Custome_Department_Truck_Inspection_System"
         mc:Ignorable="d"
-        Title="CargoLoadInspectionWindow" Height="525" Width="350">
+        Title="CargoLoadInspectionWindow" Height="550" Width="350">
     <Grid>
         <TextBlock Text="Cargo and Load Inspection" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10" FontSize="16"/>
         <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="300">
-            
+
             <TextBlock Text="Cargo Type:"/>
             <ComboBox Name="CargoTypeComboBox" Width="200" Margin="5">
                 <ComboBoxItem>Perishable</ComboBoxItem>
@@ -35,6 +35,7 @@
 
         </StackPanel>
 
-        <Button Content="Save Cargo Inspection" Margin="103,381,102,37" Click="SaveCargoInspectionButton_Click"/>
+        <Button Content="Save Cargo Inspection" Margin="120,364,116,128" Click="SaveCargoInspectionButton_Click"/>
+        <Button Content="Back" Margin="120,433,120,64" Click="BackButton_Click"/>
     </Grid>
 </Window>

@@ -9,10 +9,10 @@
     <Grid>
         <TextBlock Text="Safety and Mechanical Inspection" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10" FontSize="16"/>
 
-        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Width="300">
+        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Width="300" Margin="0,63,0,0">
 
             <TextBlock Text="Brakes Condition:"/>
-            
+
             <ComboBox Name="BrakesConditionComboBox" Width="200" Margin="5">
                 <ComboBoxItem>Good</ComboBoxItem>
                 <ComboBoxItem>Needs Repair</ComboBoxItem>
@@ -28,7 +28,7 @@
             </ComboBox>
 
             <Button Content="Save Inspection" Width="100" Margin="10" Click="SaveInspectionButton_Click"/>
-            
+            <Button Content="Back" Width="100" Margin="10" Click="BackButton_Click"/>
         </StackPanel>
 
     </Grid>

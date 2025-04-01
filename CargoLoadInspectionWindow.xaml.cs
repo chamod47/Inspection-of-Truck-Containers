@@ -66,5 +66,12 @@ namespace Custome_Department_Truck_Inspection_System
                 MessageBox.Show("Error: " + ex.Message, "Database Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            DashboardWindow dashboardWindow = new DashboardWindow();
+            dashboardWindow.Show();
+            this.Close();
+        }
     }
 }

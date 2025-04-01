@@ -81,5 +81,13 @@ namespace Custome_Department_Truck_Inspection_System
             reportsDataManagementWindow.Show();
             this.Close();
         }
+
+        private void TxtAddUser_Click(object sender, RoutedEventArgs e)
+        {
+            AddUserWindow addUserWindow=new AddUserWindow();
+            addUserWindow.Show();
+            this.Close();
+        }
+
     }
 }

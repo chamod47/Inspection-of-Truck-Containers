@@ -18,6 +18,7 @@
                 
             </ComboBox>
             <Button Content="Generate Report" Width="100" Margin="10" Click="GenerateReportButton_click"/>
+            <Button Content="Back" Width="100" Margin="10" Click="BackButton_Click"/>
         </StackPanel>
 
     </Grid>

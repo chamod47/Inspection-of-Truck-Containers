@@ -71,5 +71,13 @@ namespace Custome_Department_Truck_Inspection_System
         {
 
         }
+
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            DashboardWindow dashboardWindow = new DashboardWindow();
+            dashboardWindow.Show();
+            this.Close();
+        }
     }
 }

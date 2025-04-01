@@ -16,22 +16,23 @@ using MySql.Data.MySqlClient;
 namespace Custome_Department_Truck_Inspection_System
 {
     /// <summary>
-    /// Interaction logic for LegalComplianceCheckWindow.xaml
+    /// Interaction logic for AddUserWindow.xaml
     /// </summary>
-    public partial class LegalComplianceCheckWindow : Window
+    public partial class AddUserWindow : Window
     {
-        public LegalComplianceCheckWindow()
+        public AddUserWindow()
         {
             InitializeComponent();
         }
 
-        private void SaveComplianceCheckButton_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            string complianceStatus = (ComplianceStatusComboBox.SelectedItem as ComboBoxItem)?.Content.ToString();
+            string username = AddUserTextBox.Text;
+            string password = PasswordBox.Password;
 
-            if (string.IsNullOrEmpty(complianceStatus))
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
-                MessageBox.Show("Please select a compliance status.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Please enter both username and password.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
 
@@ -42,14 +43,23 @@ namespace Custome_Department_Truck_Inspection_System
                 using (MySqlConnection connection = new MySqlConnection(connectionString))
                 {
                     connection.Open();
-                    string query = "INSERT INTO LegalComplianceChecks (compliance_status) VALUES (@complianceStatus)";
+                    string query = "INSERT INTO Users (username, password) VALUES (@username, @password)";
 
                     using (MySqlCommand command = new MySqlCommand(query, connection))
                     {
-                        command.Parameters.AddWithValue("@complianceStatus", complianceStatus);
+                        command.Parameters.AddWithValue("@username", username);
+                        command.Parameters.AddWithValue("@password", password);
 
-                        command.ExecuteNonQuery();
-                        MessageBox.Show("Compliance check saved successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                        int result = command.ExecuteNonQuery();
+                        if (result > 0)
+                        {
+                            MessageBox.Show("User registered successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                            this.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("User registration failed.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                        }
                     }
                 }
             }
@@ -58,6 +68,8 @@ namespace Custome_Department_Truck_Inspection_System
                 MessageBox.Show("Error: " + ex.Message, "Database Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
+
+
         private void BackButton_Click(object sender, RoutedEventArgs e)
         {
             DashboardWindow dashboardWindow = new DashboardWindow();
